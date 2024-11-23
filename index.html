@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body background="background.jpg">
+  <div class="container">
+    <div class="form-box">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required placeholder="Enter your password">
+        </div>
+        <button type="submit">Login</button>
+        <p class="toggle">Don't have an account? <span id="show-signup">Sign Up</span></p>
+      </form>
+
+      <form id="signup-form" style="display: none;">
+        <h2>Sign Up</h2>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <input type="text" required placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required placeholder="Create a password">
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required placeholder="Confirm your password">
+        </div>
+        <button type="submit">Sign Up</button>
+        <p class="toggle">Already have an account? <span id="show-login">Login</span></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
